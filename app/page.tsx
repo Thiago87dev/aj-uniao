@@ -1,9 +1,11 @@
-import Hero from "./components/hero/Hero";
+import Hero from './components/hero/Hero';
+import Servicos from './components/servicos/Servicos';
 
 export default function Home() {
   return (
-    <div className="">
-      <Hero/>
+    <div>
+      <Hero />
+      <Servicos/>
     </div>
   );
 }
