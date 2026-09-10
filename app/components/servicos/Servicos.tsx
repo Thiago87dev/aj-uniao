@@ -1,6 +1,9 @@
+import { conteudoCard } from '@/app/data/servicos';
+import ServicoCard from './ServicoCard';
+
 const Servicos = () => {
   return (
-    <div className='bg-foreground min-h-screen lg:px-40 pt-10 '>
+    <div className='bg-foreground min-h-screen px-40 pt-10 flex flex-col gap-5 '>
       <div className='flex flex-col gap-3 w-2/5'>
         <h3 className='uppercase text-xs font-semibold'>
           <span className='text-center  w-6 h-0.75 bg-secondary inline-block align-middle mr-2'></span>nossos serviços
@@ -13,7 +16,13 @@ const Servicos = () => {
           uma equipe especializada e equipamentos de última geração.
         </p>
       </div>
-      <div> </div>
+      <div className='flex gap-5 flex-wrap'>
+        {conteudoCard.map(item => (
+          <div key={item.id}>
+            <ServicoCard title={item.title} title2={item.title2} text={item.text} icon={item.icon} img={item.img} />
+          </div>
+        ))}
+      </div>
       <div> </div>
       <div> </div>
     </div>
