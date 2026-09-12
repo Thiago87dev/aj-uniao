@@ -4,7 +4,7 @@ import { IoIosArrowForward } from 'react-icons/io';
 
 interface ServicoCardProps {
   title: string;
-  title2: string;
+  title2?: string;
   text: string;
   icon: IconType;
   img: string
@@ -13,12 +13,13 @@ interface ServicoCardProps {
 const ServicoCard = ({ title, title2, text, icon:Icon, img }: ServicoCardProps) => {
   return (
     <div>
-      <div className='group relative  border-primary border-4 w-110 h-35 rounded-2xl overflow-hidden bg-[#0b1015]'>
+      <div className='group relative  border-primary border-4 lg:w-110 sm:80 w-70 lg:h-40 h-35 rounded-xl overflow-hidden bg-[#0b1015]'>
         <div className='absolute inset-y-0 right-0 w-[55%] group-hover:scale-110 transition-transform duration-300'>
           <Image
             alt='Diagnostico Computadorizado'
             src={img}
             fill
+            sizes='242px'
             className='object-center -scale-x-100 '
           />
         </div>
