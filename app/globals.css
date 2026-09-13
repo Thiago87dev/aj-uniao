@@ -15,7 +15,7 @@
 }
 
 html { scroll-behavior: smooth; }
-section[id], footer[id], main[id] { scroll-margin-top: 6.5rem; }
+section[id], footer[id], main[id] { scroll-margin-top: 5rem; }
 a:focus-visible, button:focus-visible, summary:focus-visible {
   outline: 3px solid #fccd02;
   outline-offset: 5px;
