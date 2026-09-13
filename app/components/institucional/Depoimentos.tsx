@@ -1,3 +1,4 @@
+import Button from '../geral/Button';
 import { FaStar, FaArrowUpRightFromSquare } from 'react-icons/fa6';
 import { depoimentos, oficina } from '@/app/data/oficina';
 
@@ -18,15 +19,15 @@ export default function Depoimentos() {
           <br />
           <span className='text-secondary'>conta a experiência.</span>
         </h2>
-        <a
+        <Button variant='custom' fontSize='sm' uppercase={false}
           href={googleAvaliacoes}
           target='_blank'
           rel='noopener noreferrer'
-          className='inline-flex shrink-0 items-center gap-3 rounded-full border border-white/25 px-5 py-3 text-sm font-semibold hover:bg-white/10'
+          className='inline-flex shrink-0 items-center gap-3 rounded-full border border-white/25 px-5 py-3 font-semibold hover:bg-white/10'
         >
           Ver avaliações no Google
           <FaArrowUpRightFromSquare aria-hidden='true' />
-        </a>
+        </Button>
       </div>
       {oficina.demonstracao && (
         <p className='mt-5 text-sm text-slate-400'>
@@ -45,7 +46,7 @@ export default function Depoimentos() {
               </span>
               <div className='min-w-0'>
                 <p className='font-semibold'>{item.nome}</p>
-                <p className='mt-0.5 text-xs text-[#5f6368]'>Perfil de exemplo</p>
+                {/* <p className='mt-0.5 text-xs text-[#5f6368]'>Perfil de exemplo</p> */}
               </div>
             </figcaption>
             <div className='mt-5 flex flex-wrap items-center gap-3'>
@@ -54,7 +55,7 @@ export default function Depoimentos() {
                   <FaStar key={i} aria-hidden='true' className='size-4' />
                 ))}
               </span>
-              <span className='text-xs text-[#5f6368]'>Demonstração</span>
+              {/* <span className='text-xs text-[#5f6368]'>Demonstração</span> */}
             </div>
             <blockquote className='mt-4 flex-1 text-sm leading-6'>{item.texto}</blockquote>
             <p className='mt-6 border-t border-[#dadce0] pt-4 text-xs text-[#5f6368]'>{item.servico}</p>

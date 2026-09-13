@@ -1,3 +1,4 @@
+import { whatsappHref } from '@/app/data/oficina';
 import Button from "../geral/Button";
 
 const Hero = () => {
@@ -16,7 +17,7 @@ const Hero = () => {
           <p className='text-lg leading-7'>
             Sua oficina mecânica de confiança para diagnósticos avançados e manutenção profissional.
           </p>
-          <Button title="agendar revisão"/>
+          <Button href={whatsappHref} title="agendar revisão"/>
         </div>
       </div>
     </section>
