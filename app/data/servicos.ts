@@ -28,6 +28,7 @@ export const conteudoCard = [
     text: 'Proteção e maior vida útil para o motor.',
     icon: FaOilCan,
     img: '/img/servicos/troca_de_oleo.png',
+    imgCenter: true
   },
   {
     id: 4,

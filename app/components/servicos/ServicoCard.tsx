@@ -8,9 +8,10 @@ interface ServicoCardProps {
   text: string;
   icon: IconType;
   img: string
+  imgCenter?: boolean
 }
 
-const ServicoCard = ({ title, title2, text, icon:Icon, img }: ServicoCardProps) => {
+const ServicoCard = ({ title, title2, text, icon:Icon, img, imgCenter }: ServicoCardProps) => {
   return (
     <div>
       <div className='group relative  border-primary border-4 w-full min-h-40 rounded-xl overflow-hidden bg-[#0b1015]'>
@@ -20,7 +21,7 @@ const ServicoCard = ({ title, title2, text, icon:Icon, img }: ServicoCardProps) 
             src={img}
             fill
             sizes='242px'
-            className='object-center -scale-x-100 '
+            className={`${imgCenter ? 'object-center': 'object-cover'} -scale-x-100`}
           />
         </div>
         
