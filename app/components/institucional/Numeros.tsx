@@ -34,7 +34,7 @@ export default function Numeros() {
       <dl className='flex justify-around flex-col gap-8 sm:gap-0 sm:flex-row'>
         {numeros.map(item => <div key={item.titulo} className='text-center sm:text-left'>
           <dt className='text-sm text-blue-100'>{item.titulo}</dt>
-          <dd className='mt-2 text-4xl font-black tabular-nums text-secondary sm:text-5xl'>
+          <dd className=' mt-0 sm:mt-2 text-5xl font-black tabular-nums text-secondary'>
             <span aria-hidden='true'>{Math.round(item.valor * progresso).toLocaleString('pt-BR')}{item.sufixo}</span>
             <span className='sr-only'>{item.valor.toLocaleString('pt-BR')}{item.sufixo}</span>
           </dd>
