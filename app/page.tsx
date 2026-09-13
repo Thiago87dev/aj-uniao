@@ -12,7 +12,7 @@ import Footer from './components/institucional/Footer';
 export default function Home() {
   return (
     <>
-      <a href='#conteudo' className='sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[60] focus:rounded-lg focus:bg-secondary focus:p-4 focus:text-primary'>Pular para o conteúdo</a>
+      <a href='#conteudo' className='sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-60 focus:rounded-lg focus:bg-secondary focus:p-4 focus:text-primary'>Pular para o conteúdo</a>
       <Navbar />
       <main id='conteudo' tabIndex={-1}>
         <Hero />

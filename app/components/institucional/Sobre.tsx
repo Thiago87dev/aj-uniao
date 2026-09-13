@@ -8,7 +8,7 @@ export default function Sobre() {
     <section id='sobre' aria-labelledby='sobre-titulo' className='bg-[#f3f6fa] px-5 py-16 text-background sm:px-10 lg:px-16 lg:py-24 xl:px-40'>
       <div className='grid items-center gap-10 lg:grid-cols-2 lg:gap-14'>
         <figure className='min-w-0'>
-          <div className='relative aspect-[4/3] overflow-hidden rounded-xl border-b-4 border-secondary'>
+          <div className='relative aspect-4/3 overflow-hidden rounded-xl border-b-4 border-secondary'>
             <Image src={oficina.imagem} alt='Imagem ilustrativa de um mecânico avaliando um motor em uma oficina' fill sizes='(min-width: 1280px) 40vw, (min-width: 1024px) 45vw, 100vw' className='object-cover' />
           </div>
           {oficina.demonstracao && <figcaption className='mt-3 text-xs text-slate-500'>Imagem ilustrativa gerada por IA.</figcaption>}

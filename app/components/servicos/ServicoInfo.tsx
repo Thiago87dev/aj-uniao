@@ -12,9 +12,9 @@ const ServicoInfo = ({ title, text, icon: Icon }: ServicoInfoProps) => {
       <div className='flex size-10 sm:size-12 shrink-0 items-center justify-center rounded-xl'>
         <Icon className='size-10 sm:size-12 text-primary' />
       </div>
-      <div>
-        <h3 className='text-sm font-black uppercase'>{title}</h3>
-        <p className='text-xs font-semibold'>{text}</p>
+      <div className='min-w-0'>
+        <h3 className='text-base leading-snug font-black uppercase'>{title}</h3>
+        <p className='mt-2 text-base leading-6 text-slate-700'>{text}</p>
       </div>
     </div>
   );

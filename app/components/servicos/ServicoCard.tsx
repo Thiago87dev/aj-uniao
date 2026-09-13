@@ -14,7 +14,7 @@ interface ServicoCardProps {
 const ServicoCard = ({ title, title2, text, icon:Icon, img, imgCenter }: ServicoCardProps) => {
   return (
     <div>
-      <div className='group relative  border-primary border-4 w-full min-h-40 rounded-xl overflow-hidden bg-[#0b1015]'>
+      <div className='group relative  border-primary border-4 w-full min-h-48 rounded-xl overflow-hidden bg-[#0b1015]'>
         <div className='absolute inset-y-0 right-0 w-[55%] group-hover:scale-110 transition-transform duration-300'>
           <Image
             alt={title}
@@ -31,11 +31,11 @@ const ServicoCard = ({ title, title2, text, icon:Icon, img, imgCenter }: Servico
             <div className='flex size-12 shrink-0 items-center justify-center rounded-xl bg-primary/40'>
               <Icon className='size-6 text-secondary' />
             </div>
-            <div className='min-w-0 max-w-45'>
-              <h3 className='text-sm font-semibold text-white'>
+            <div className='min-w-0 max-w-56'>
+              <h3 className='text-lg leading-snug font-bold text-white'>
                 {title} <br /> {title2}
               </h3>
-              <p className='mt-3 text-xs text-foreground'>{text}</p>
+              <p className='mt-3 text-base leading-6 text-foreground'>{text}</p>
               <IoIosArrowForward className='mt-3 size-4 text-secondary' />
             </div>
           </div>

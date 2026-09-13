@@ -31,7 +31,7 @@ export default function Numeros() {
   }, []);
   return (
     <div ref={container} className='mt-14 rounded-2xl bg-primary p-6 sm:p-10'>
-      <dl className='flex justify-around sm:grid-cols-3'>
+      <dl className='flex justify-around flex-col gap-8 sm:gap-0 sm:flex-row'>
         {numeros.map(item => <div key={item.titulo} className='text-center sm:text-left'>
           <dt className='text-sm text-blue-100'>{item.titulo}</dt>
           <dd className='mt-2 text-4xl font-black tabular-nums text-secondary sm:text-5xl'>

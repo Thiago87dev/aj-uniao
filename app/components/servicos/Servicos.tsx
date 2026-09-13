@@ -10,7 +10,7 @@ const Servicos = () => {
       className='bg-[#f3f6fa] text-background min-h-screen px-5 sm:px-10 lg:px-16 xl:px-40 pt-10 flex flex-col gap-5 pb-10'
     >
       <div className='flex flex-col gap-3 max-w-2xl w-full min-w-0'>
-        <p className='uppercase text-xs font-semibold'>
+        <p className='uppercase text-sm font-semibold'>
           <span
             aria-hidden='true'
             className='text-center  w-6 h-0.75 bg-secondary inline-block align-middle mr-2'
@@ -23,7 +23,7 @@ const Servicos = () => {
         >
           serviços <span className='text-primary'>especializados</span>
         </h2>
-        <p>
+        <p className='text-lg leading-8 text-slate-700'>
           Tecnologia, experiência e comprometimento para manter seu veículo sempre em perfeito funcionamento. Conte com
           uma equipe especializada e equipamentos de última geração.
         </p>
@@ -44,7 +44,7 @@ const Servicos = () => {
       </ol>
       <ol className='mt-4 grid w-full grid-cols-1 gap-8 justify-items-center lg:grid-cols-3 lg:items-start'>
         {conteudoInfo.map(item => (
-          <li key={item.id}>
+          <li key={item.id} className='w-full min-w-0 max-w-80'>
             <ServicoInfo icon={item.icon} title={item.title} text={item.text} />
           </li>
         ))}
