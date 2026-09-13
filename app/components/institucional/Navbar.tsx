@@ -24,7 +24,8 @@ export default function Navbar() {
           {aberto ? <FaXmark aria-hidden='true' /> : <FaBars aria-hidden='true' />}
         </button>
         <div id='menu-mobile' hidden={!aberto} className='absolute inset-x-0 top-full max-h-[calc(100dvh-5rem)] overflow-y-auto border-b border-white/10 bg-[#0b1015] px-5 py-5 shadow-xl xl:hidden'>
-          {[...navegacao, { href: whatsappHref, titulo: 'Fale com a gente' }].map(item => <a key={item.href} href={item.href} onClick={() => setAberto(false)} className='block rounded-lg px-3 py-3 text-sm font-semibold hover:bg-white/10 hover:text-secondary'>{item.titulo}</a>)}
+          {navegacao.map(item => <a key={item.href} href={item.href} onClick={() => setAberto(false)} className='block rounded-lg px-3 py-3 text-sm font-semibold hover:bg-white/10 hover:text-secondary'>{item.titulo}</a>)}
+          <a href={whatsappHref} onClick={() => setAberto(false)} className='mt-3 block rounded-xl bg-secondary px-4 py-3 text-center text-sm font-bold text-primary'>Fale com a gente</a>
         </div>
       </nav>
     </header>
