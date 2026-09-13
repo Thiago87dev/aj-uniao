@@ -8,7 +8,7 @@ interface ServicoInfoProps {
 
 const ServicoInfo = ({ title, text, icon: Icon }: ServicoInfoProps) => {
   return (
-    <div className='flex gap-4 items-center w-60 sm:w-80'>
+    <div className='flex gap-4 items-center w-full max-w-80 min-w-0'>
       <div className='flex size-10 sm:size-12 shrink-0 items-center justify-center rounded-xl'>
         <Icon className='size-10 sm:size-12 text-primary' />
       </div>

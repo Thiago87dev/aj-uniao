@@ -13,10 +13,10 @@ interface ServicoCardProps {
 const ServicoCard = ({ title, title2, text, icon:Icon, img }: ServicoCardProps) => {
   return (
     <div>
-      <div className='group relative  border-primary border-4 lg:w-110 sm:80 w-70 lg:h-40 h-35 rounded-xl overflow-hidden bg-[#0b1015]'>
+      <div className='group relative  border-primary border-4 w-full min-h-40 rounded-xl overflow-hidden bg-[#0b1015]'>
         <div className='absolute inset-y-0 right-0 w-[55%] group-hover:scale-110 transition-transform duration-300'>
           <Image
-            alt='Diagnostico Computadorizado'
+            alt={title}
             src={img}
             fill
             sizes='242px'
@@ -25,12 +25,12 @@ const ServicoCard = ({ title, title2, text, icon:Icon, img }: ServicoCardProps) 
         </div>
         
         <div className='absolute inset-0 bg-linear-to-r from-[#0b1015] via-[#0b1015]/90 to-transparent' />
-        <div className='relative z-10 flex h-full items-center p-6'>
-          <div className='flex items-start gap-5'>
+        <div className='relative z-10 flex h-full items-center p-4 sm:p-6'>
+          <div className='flex min-w-0 items-start gap-3 sm:gap-5'>
             <div className='flex size-12 shrink-0 items-center justify-center rounded-xl bg-primary/40'>
               <Icon className='size-6 text-secondary' />
             </div>
-            <div className='max-w-45'>
+            <div className='min-w-0 max-w-45'>
               <h3 className='text-sm font-semibold text-white'>
                 {title} <br /> {title2}
               </h3>
