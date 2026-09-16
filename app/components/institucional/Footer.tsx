@@ -1,3 +1,4 @@
+import { FaInstagram } from 'react-icons/fa6';
 import Button from '../geral/Button';
 import { navegacao, oficina } from '@/app/data/oficina';
 
@@ -42,6 +43,19 @@ export default function Footer() {
           <p className='mt-4 max-w-xs text-sm leading-6 text-slate-400'>
             Precisão no serviço. Atenção com você. Cuidado em cada quilômetro.
           </p>
+          <Button
+            href={oficina.instagram}
+            variant='custom'
+            fontSize='sm'
+            uppercase={false}
+            target='_blank'
+            rel='noopener noreferrer'
+            aria-label='Visitar Instagram (abre em nova aba)'
+            className='mt-5 inline-flex min-h-11 items-center gap-3 rounded-xl border border-white/20 px-4 py-2 text-white transition-colors hover:border-secondary hover:text-secondary'
+          >
+            <FaInstagram aria-hidden='true' className='size-5 text-[#E1306C]' />
+            Instagram
+          </Button>
         </div>
         <nav aria-label='Navegação do rodapé'>
           <h3 className='mb-4 font-bold'>Explore</h3>
