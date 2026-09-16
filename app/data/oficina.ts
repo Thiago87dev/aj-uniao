@@ -2,7 +2,8 @@
 export const oficina = {
   nome: 'AJ União',
   // Link provisório: substitua pelo perfil da oficina.
-  instagram: 'https://www.instagram.com/instagram/',
+  instagram: 'https://www.instagram.com/ajuniao/',
+  facebook: 'https://www.facebook.com/ajuniaomecanica/?locale=pt_BR',
   demonstracao: false,
   descricao:
     'Uma oficina feita por quem gosta de carros e valoriza pessoas. Nossa história começa com uma ideia simples: explicar cada cuidado e tratar cada veículo com atenção.',
