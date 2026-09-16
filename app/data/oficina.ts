@@ -6,13 +6,13 @@ export const oficina = {
     'Uma oficina feita por quem gosta de carros e valoriza pessoas. Nossa história começa com uma ideia simples: explicar cada cuidado e tratar cada veículo com atenção.',
   complemento:
     'Unimos experiência na manutenção automotiva e diagnóstico técnico para acompanhar você em cada quilômetro. Da revisão de rotina ao imprevisto, queremos que você entenda o que seu carro precisa.',
-  endereco: 'Rua Exemplo, 123 — Centro',
+  endereco: 'Av. Cel. Procópio Gomes, 1067 - Bucarein ',
   cidade: 'Joinville — SC',
-  mapaConsulta: 'Centro, Joinville, SC',
-  mapaProvisorio: true,
-  telefone: '(00) 00000-0000',
+  mapaConsulta: 'Av. Cel. Procópio Gomes, 1067 - Bucarein, Joinville',
+  mapaProvisorio: false,
+  telefone: '(47) 99158-6910',
   // Número fictício sem destinatário válido. Substitua por DDI + DDD + número real.
-  whatsapp: '5500000000000',
+  whatsapp: '5547991586910',
   horarios: ['Segunda a sexta: 8h às 18h', 'Sábado: 8h às 12h'],
   imagem: '/img/sobre/oficina-ilustrativa.png',
 };
