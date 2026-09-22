@@ -1,3 +1,4 @@
+import { oficina } from './data/oficina';
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -13,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AJ União | Mecânica automotiva",
-  description: "Conheça os serviços e o atendimento da AJ União Mecânica.",
+  title: `${oficina.nome} | Mecânica automotiva`,
+  description: `Conheça os serviços e o atendimento da ${oficina.nome}.`,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

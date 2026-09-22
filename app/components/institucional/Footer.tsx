@@ -38,7 +38,7 @@ export default function Footer() {
       <div className='grid gap-10 py-10 sm:grid-cols-2 xl:grid-cols-4'>
         <div>
           <p className='text-2xl font-black uppercase'>
-            AJ <span className='text-secondary'>União</span>
+            {oficina.marcaInicio} <span className='text-secondary'>{oficina.marcaDestaque}</span>
           </p>
           <p className='mt-4 max-w-xs text-sm leading-6 text-slate-400'>
             Precisão no serviço. Atenção com você. Cuidado em cada quilômetro.

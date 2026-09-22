@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { FaCheck } from 'react-icons/fa6';
-import { oficina } from '@/app/data/oficina';
+import { oficina, numeros } from '@/app/data/oficina';
 import Numeros from './Numeros';
 
 export default function Sobre() {
@@ -23,7 +23,7 @@ export default function Sobre() {
           </ul>
         </div>
       </div>
-      <Numeros />
+      <Numeros numeros={numeros} demonstracao={oficina.demonstracao} />
     </section>
   );
 }

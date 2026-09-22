@@ -2,9 +2,6 @@ import Button from '../geral/Button';
 import { FaStar, FaArrowUpRightFromSquare } from 'react-icons/fa6';
 import { depoimentos, oficina } from '@/app/data/oficina';
 
-const googleAvaliacoes =
-  'https://www.google.com/search?kgmid=/g/1ydnqhlhh&q=AJ+Uni%C3%A3o+Mec%C3%A2nica#lrd=0x94deb0553b4de977:0xc96f79088dcf9e57,1,,,,';
-
 export default function Depoimentos() {
   return (
     <section
@@ -20,7 +17,7 @@ export default function Depoimentos() {
           <span className='text-secondary'>conta a experiência.</span>
         </h2>
         <Button variant='custom' fontSize='sm' uppercase={false}
-          href={googleAvaliacoes}
+          href={oficina.googleAvaliacoes}
           target='_blank'
           rel='noopener noreferrer'
           className='inline-flex shrink-0 items-center gap-3 rounded-full border border-white/25 px-5 py-3 font-semibold hover:bg-white/10'

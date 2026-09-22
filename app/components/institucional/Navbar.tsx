@@ -4,9 +4,13 @@ import Button from '../geral/Button';
 
 import { useRef, useState } from 'react';
 import { FaBars, FaXmark } from 'react-icons/fa6';
-import { navegacao, oficina, whatsappHref } from '@/app/data/oficina';
+interface NavbarProps {
+  oficina: { nome: string; marcaInicio: string; marcaDestaque: string };
+  navegacao: { href: string; titulo: string }[];
+  whatsappHref: string;
+}
 
-export default function Navbar() {
+export default function Navbar({ oficina, navegacao, whatsappHref }: NavbarProps) {
   const [aberto, setAberto] = useState(false);
   const botao = useRef<HTMLButtonElement>(null);
   return (
@@ -25,7 +29,7 @@ export default function Navbar() {
       >
         <a href='#inicio' aria-label={`${oficina.nome} — início`} onClick={() => setAberto(false)} className='shrink-0'>
           <span className='block text-2xl font-black uppercase tracking-tight'>
-            AJ <span className='text-secondary'>União</span>
+            {oficina.marcaInicio} <span className='text-secondary'>{oficina.marcaDestaque}</span>
           </span>
           <span className='block text-[10px] uppercase tracking-[0.24em] text-slate-300'>Mecânica automotiva</span>
         </a>

@@ -1,9 +1,9 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { numeros, oficina } from '@/app/data/oficina';
+interface NumerosProps { numeros: { valor: number; sufixo: string; titulo: string }[]; demonstracao: boolean; }
 
-export default function Numeros() {
+export default function Numeros({ numeros, demonstracao }: NumerosProps) {
   const container = useRef<HTMLDivElement>(null);
   const [progresso, setProgresso] = useState(1);
   useEffect(() => {
@@ -40,7 +40,7 @@ export default function Numeros() {
           </dd>
         </div>)}
       </dl>
-      {oficina.demonstracao && <p className='mt-6 text-xs text-blue-100'>Números ilustrativos para demonstração.</p>}
+      {demonstracao && <p className='mt-6 text-xs text-blue-100'>Números ilustrativos para demonstração.</p>}
     </div>
   );
 }
