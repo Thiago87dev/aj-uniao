@@ -16,7 +16,7 @@ export const dadosReais = {
     mapaProvisorio: false,
     telefone: '(47) 99158-6910',
     telefone2: '(47) 99244-1387',
-    whatsapp: '5547991586910',
+    whatsapp: '5547992441387',
     horarios: ['Segunda a sexta: 8h às 18h', 'Sábado: 8h às 12h'],
     imagem: '/img/sobre/oficina-ilustrativa.png',
     googleAvaliacoes:
