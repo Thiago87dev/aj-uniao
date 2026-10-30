@@ -13,12 +13,17 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
+const siteUrl = 'https://www.ajuniao.com.br';
+
 export const metadata: Metadata = {
-  title: `${oficina.nome} | Mecânica automotiva`,
+  metadataBase: new URL(siteUrl),
+
+  title: `${oficina.nome} | Oficina Mecânica em Joinville - SC`,
+
   description: `${oficina.nome} é uma oficina mecânica em Joinville - SC. Conheça nossos serviços de manutenção automotiva e entre em contato para solicitar um orçamento.`,
-  
+
   alternates: {
-    canonical: "/",
+    canonical: '/',
   },
 
   robots: {
@@ -27,15 +32,13 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "AJ União | Oficina Mecânica em Joinville",
-    description:
-      `Conheça a ${oficina.nome}, oficina mecânica em Joinville - SC. Serviços de manutenção automotiva e atendimento especializado.`,
-    url: "https://www.ajuniao.com.br/",
-    siteName: "AJ União",
-    locale: "pt_BR",
-    type: "website",
+    title: `${oficina.nome} | Oficina Mecânica em Joinville`,
+    description: `Conheça a ${oficina.nome}, oficina mecânica em Joinville - SC. Serviços de manutenção automotiva e atendimento especializado.`,
+    url: '/',
+    siteName: oficina.nome,
+    locale: 'pt_BR',
+    type: 'website',
   },
-
 };
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {
